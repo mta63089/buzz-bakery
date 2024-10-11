@@ -13,12 +13,11 @@ import {
   Share,
   SquareTerminal,
   SquareUser,
-  Triangle,
   Turtle,
-} from "lucide-react"
+} from "lucide-react";
 
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Drawer,
   DrawerContent,
@@ -26,31 +25,32 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+} from "@/components/ui/drawer";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { Textarea } from "@/components/ui/textarea"
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip"
+} from "@/components/ui/tooltip";
+import { Spiffo } from "./spiffo";
 
 export default function Dashboard() {
   return (
     <div className="grid h-screen w-full pl-[53px]">
-      <aside className="inset-y fixed  left-0 z-20 flex h-full flex-col border-r">
-        <div className="border-b p-2">
-          <Button variant="outline" size="icon" aria-label="Home">
-            <Triangle className="size-5 fill-foreground" />
-          </Button>
+      <aside className="inset-y fixed left-0 z-20 flex h-full flex-col border-r">
+        <div className="m-2">
+          <div className="">
+            <Spiffo.surfer className="size-8" />
+          </div>
         </div>
         <nav className="grid gap-1 p-2">
           <Tooltip>
@@ -453,5 +453,5 @@ export default function Dashboard() {
         </main>
       </div>
     </div>
-  )
+  );
 }

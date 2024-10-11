@@ -7,17 +7,6 @@ const height = 100;
 const width = 100;
 
 export const Spiffo = {
-  404: (props: SpiffoProps) => {
-    return (
-      <Image
-        src="/spiffo/404.png"
-        alt="Spiffo the red raccoon holding a 404 sign"
-        height={height}
-        width={width}
-        {...props}
-      />
-    );
-  },
   birthday: (props: SpiffoProps) => {
     return (
       <Image
@@ -133,6 +122,17 @@ export const Spiffo = {
       <Image
         src="/spiffo/no.png"
         alt="Spiffo the red raccoon shaking his head"
+        height={height}
+        width={width}
+        {...props}
+      />
+    );
+  },
+  pageNotFound: (props: SpiffoProps) => {
+    return (
+      <Image
+        src="/spiffo/404.png"
+        alt="Spiffo the red raccoon holding a 404 sign"
         height={height}
         width={width}
         {...props}
